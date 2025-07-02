@@ -1,0 +1,37 @@
+# STEP BY STEP WALLET GENERATION GUIDE OF OCTRA { CODESPACE }
+
+---
+
+## 🔹 Step 1: Install Bun
+
+```bash 
+curl -fsSL https://bun.sh/install | bash source ~/.bashrc bun --version
+```
+---
+
+##🔹 Step 2:Open terminal in gitpod and install Python
+```bash
+ sudo apt install python3 python3-pip python3-venv python3-dev -y
+```
+---
+##🔹 Step 3:Run these commands :
+```
+bash git clone https://github.com/octra-labs/octra_pre_client.git cd octra_pre_client python3 -m venv venv source venv/bin/activate # for windows use: venv\Scripts\activate pip install -r requirements.txt cp wallet.json.example wallet.json
+```
+---
+##🔹 Step 4:Open wallet.json
+```
+bash nano wallet.json
+```
+---
+##🔹 Step 5:Edit it (change placeholders to your wallet data):
+```json
+ { "priv": "private-key-here", "addr": "octxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "rpc": "https://octra.network" }
+```
+---
+🔹 Step 6:Run to open frontend UI to make transaction
+
+```bash
+ ./run.sh
+```
+---
